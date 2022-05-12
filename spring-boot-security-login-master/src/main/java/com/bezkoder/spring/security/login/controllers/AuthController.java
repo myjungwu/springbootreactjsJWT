@@ -71,6 +71,7 @@ public class AuthController {
 
     System.out.println("jwtCookie.getName() = " + jwtCookie.getValue());
     HttpHeaders myHeaders = new HttpHeaders();
+    //token 값을 access-token  헤더에 저장하기
     myHeaders.set("access-token", jwtCookie.getValue());
 
     System.out.println("myHeaders Token = " + myHeaders.get("access-token"));
